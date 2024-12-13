@@ -1,21 +1,23 @@
-const AuthRoutes = {
-    path: '/auth',
+export default [{
+    path: '/login',
     component: () => import('@/layouts/blank/BlankLayout.vue'),
-    meta: {
-        requiresAuth: false
-    },
     children: [
         {
             name: 'Login',
-            path: '/auth/login',
+            path: '',
             component: () => import('@/views/auth/Login.vue')
-        },
+        }
+    ]
+},
+{
+    path: '/cadastrar',
+    component: () => import('@/layouts/blank/BlankLayout.vue'),
+    children: [
         {
             name: 'Register',
-            path: '/auth/register',
+            path: '',
             component: () => import('@/views/auth/Register.vue')
         },
     ]
-};
-
-export default AuthRoutes;
+}
+];

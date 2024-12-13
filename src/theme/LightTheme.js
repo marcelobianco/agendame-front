@@ -1,6 +1,4 @@
-import type { ThemeTypes } from '@/types/themeTypes/ThemeType';
-
-const PurpleTheme: ThemeTypes = {
+const PurpleTheme = {
     name: 'PurpleTheme',
     dark: false,
     variables: {
